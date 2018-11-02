@@ -94,10 +94,9 @@ function printQuote(){
 
 function changeBgColor() {
         // Randomize RGB values. Max values are set to 200 to avoid conflicting with the white text.
-        let x = Math.floor(Math.random() * 200);
-        let y = Math.floor(Math.random() * 200);
-        let z = Math.floor(Math.random() * 200);
-        let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        const x = Math.floor(Math.random() * 200);
+        const y = Math.floor(Math.random() * 200);
+        const z = Math.floor(Math.random() * 200);
 
-        document.body.style.background = bgColor;
+        document.body.style.background = "rgb(" + x + "," + y + "," + z + ")";
 }
